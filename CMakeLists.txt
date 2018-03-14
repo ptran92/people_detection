@@ -5,8 +5,8 @@ set(CMAKE_SOURCE_DIR "${CMAKE_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/cmake")
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin")
 set(BIN_NAME "detection")
 
-find_library(OpenCV REQUIRED)
-find_library(Darknet REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(Darknet REQUIRED)
 
 set(
   SRC 
