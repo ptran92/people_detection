@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0.0)
 project(people_detection)
 
 set(CMAKE_SOURCE_DIR "${CMAKE_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/cmake")
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin")
 set(BIN_NAME "detection")
 
@@ -9,8 +10,8 @@ find_package(OpenCV REQUIRED)
 find_package(Darknet REQUIRED)
 
 set(
-  SRC 
-    ${PROJECT_SOURCE_DIR}/src/detection.cpp	
+  SRC
+    ${PROJECT_SOURCE_DIR}/src/detection.cpp
 )
 include_directories(
   ${PROJECT_SOURCE_DIR}/include
@@ -30,7 +31,7 @@ add_executable(
 )
 
 target_link_libraries(
-  ${BIN_NAME} 
+  ${BIN_NAME}
     ${OpenCV_LIBRARIES}
     ${Darknet_LIBRARIES}
 )
