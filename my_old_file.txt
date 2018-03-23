@@ -1,0 +1,5 @@
+Floating point.pages
+Lightroom_Catalog/
+aarch64-unknown-linux-gnueabi/
+crossbuild/
+repo/
