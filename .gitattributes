@@ -1,1 +1,2 @@
 test.txt filter=lfs diff=lfs merge=lfs -text
+my_old_file.txt filter=lfs diff=lfs merge=lfs -text
