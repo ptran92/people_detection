@@ -1,0 +1,2 @@
+yolo-face_final.weights filter=lfs diff=lfs merge=lfs -text
+yolo-face.cfg filter=lfs diff=lfs merge=lfs -text
